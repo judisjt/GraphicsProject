@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{6A77C4F3-454B-B087-9399-84CC2AFC5650}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Apartment_Door\Scripts\DoorController.cs" />
+    <Compile Include="Assets\Apartment_Door\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -72,33 +74,58 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scenes\MyObj\ThrowBall.cs" />
+    <Compile Include="Assets\VLights\Scripts\Demo\MouseOrbitDemo.cs" />
+    <Compile Include="Assets\VLights\Scripts\PostProcess\VLightInterleavedSampling.cs" />
+    <Compile Include="Assets\VLights\Scripts\Util\GenerateNoiseTexture.cs" />
+    <Compile Include="Assets\VLights\Scripts\Util\ShaderLibrary.cs" />
+    <Compile Include="Assets\VLights\Scripts\Util\VLightGeometryUtil.cs" />
+    <Compile Include="Assets\VLights\Scripts\Util\VLightShaderUtil.cs" />
+    <Compile Include="Assets\VLights\Scripts\VLight\VLight.cs" />
+    <Compile Include="Assets\VLights\Scripts\VLight\VLightHelper.cs" />
+    <Compile Include="Assets\VLights\Scripts\VLight\VLightManager.cs" />
+    <None Include="Assets\VLights\Shaders\Common\Camera-DepthNormalTexture.shader" />
+    <None Include="Assets\VLights\Shaders\Common\DownscaleDepth.shader" />
+    <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLightArea.shader" />
+    <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLightOrthographic.shader" />
+    <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLight.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VLightHelperPoint.cginc" />
+    <None Include="Assets\VLights\Shaders\Light\VLightHelperOrthographic.cginc" />
+    <None Include="Assets\VLights\Shaders\PostProcess\VolumeLightInterleavedComposite.shader" />
+    <None Include="Assets\VLights\Shaders\Common\RenderDepth.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VolumeLightDepth.shader" />
+    <None Include="Assets\VLights\Shaders\PostProcess\Blur.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VLightHelperArea.cginc" />
+    <None Include="Assets\VLights\Readme.txt" />
+    <None Include="Assets\VLights\Shaders\PostProcess\SimpleComposite.shader" />
+    <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLightPoint.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VLightHelper.cginc" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/jason/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/jason/Graphics_Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Users/jason/Desktop/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -634,7 +661,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{79391AC5-8752-B4CC-F33F-BB9EB1094377}</Project>
+      <Project>{79FFFE5C-E2B3-946C-3C2F-889408866C4A}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
